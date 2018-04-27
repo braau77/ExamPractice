@@ -1,0 +1,23 @@
+<html>
+  <head>
+   Type Name here
+  </head>
+  <body>
+   <input type="text" id="takeName">
+   <button onclick='theNames()' id='takeNames'>
+   Submit
+   </button>
+   <p id="deez">
+   
+   </p>
+  <script>
+var test = [];
+
+function theNames(){
+var name = document.getElementById('takeName').value;
+test.push(name);
+document.getElementById('deez').innerHTML = test;
+}
+  </script>
+  </body>
+</html>

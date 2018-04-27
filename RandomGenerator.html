@@ -1,0 +1,25 @@
+<html>
+  <head>
+ 
+  </head>
+  <body>
+    <button onclick='chooseNum()'>
+      Choose random numbers
+    </button>
+    <p id="test">
+     
+    </p>
+  <script>
+function chooseNum(){
+	var firstNum = Math.floor(Math.random() * 100);
+  var secondNum = Math.floor(Math.random() * 100);
+  if (firstNum < secondNum){
+   document.getElementById('test').innerHTML = secondNum + "is greater than" + firstNum;
+  }
+  else{
+  document.getElementById('test').innerHTML = firstNum + "is greater than" + secondNum;
+  }
+}
+  </script>
+  </body>
+</html>

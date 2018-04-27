@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <h1>Enter Name</h1>
+  </head>
+  <body>
+    <input type='text' id='showName'>
+    <button onclick="newPage()" id='newPages'>Take Me Away To Page 2</button>
+    <a href='practice2.html'>next page</a>
+    <script>
+      function newPage(){
+        var x = document.getElementById('showName').value;
+        localStorage.setItem('myNames', x);
+      }
+    </script>
+  </body>
+</html>
