@@ -1,0 +1,17 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <input type='text' onkeydown='displayName()' id='namess'>
+    <p id='p'></p>
+    <script>
+      function displayName(){
+        var test = document.getElementById('namess').value;
+        if (event.keyCode === 13){
+          document.getElementById('p').innerHTML = test;
+        }
+      }
+    </script>
+  </body>
+</html>
