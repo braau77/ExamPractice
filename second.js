@@ -21,5 +21,7 @@ function saveHobbies(){
   return true;
 }
 function clearHobby(){
-  var c = window.localStorage.clear();
+  hobbies = [];
+  counter = 0;
+  document.getElementById('check').innerHTML = hobbies.length;
 }
